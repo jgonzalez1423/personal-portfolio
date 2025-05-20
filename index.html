@@ -12,8 +12,9 @@
 
     <div class="logo">Jennifer</div>
     <nav>
-      <a href="#">Projects</a>
-      <a href="#" class="cta">Contact Me</a>
+      <a href="assets/resume-tech.pdf" target="_blank">Technical Resume</a>
+  <a href="assets/resume-creative.pdf" target="_blank">Creative Resume</a>
+      <a href="#contact" class="cta">Contact Me</a>
     </nav>
   </header>
 
@@ -21,14 +22,70 @@
     <div class="hero-text">
       <h1>Hey, I’m Jennifer.</h1>
       <p>I combine creative thinking and technical skills to build data-driven, human-centered digital experiences.</p>
-      <a href="#" class="pink-btn">Work with Me</a>
+      
     </div>
     <div class="hero-image">
       <img src="assets/profile-pic.jpg" alt="Photo of Jennifer" />
     </div>
   </main>
+  <section id="about" class="about-section">
+  <h2>About Me</h2>
+  <p>
+    I’m Jennifer, a CS + Advertising student who ______.
+  </p>
+</section>
+<!-- Filter Buttons -->
+<section class="projects-section homepage">
+  <h2>My Work</h2>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="advertising">Advertising</button>
+    <button class="filter-btn" data-filter="cs">Computer Science</button>
+  </div>
+
+  <!-- Card Grid -->
+  <div class="project-grid">
+    <!-- Example Card -->
+    <div class="project-card advertising">
+  <img src="assets/hearst-graphic1.jpg" alt="Hearst Castle Flyer" />
+  <div class="card-content">
+    <div class="card-header">
+      <h3>Hearst Castle Promo</h3>
+      <img class="icon" src="assets/canva-icon.webp" alt="Canva Icon" />
+    </div>
+    <p>
+      Elegant Canva graphics and brand messaging strategy for a historic landmark.
+    </p>
+    <a href="hearst.html" class="read-more">View Details →</a>
+  </div>
+</div>
+
+    <div class="project-card cs">
+    <img src="assets/grocerygauge.jpg" alt="Grocery Gauge Screenshot">
+    <div class="card-content">
+    <h3>GroceryGauge</h3>
+    <p>Frontend for a React + Django price tracking app with LLM integration.</p>
+    <a href="grocerygauge.html" class="read-more">View Case Study →</a>
+     </div>
+    </div>
+    <!-- More cards go here, add class "cs" or "advertising" to match filters -->
+  </div>
+</section>
+<!-- Contact section -->
+<section id="contact" class="contact-section">
+  <h2>Get in Touch</h2>
+  <form class="contact-form" action="mailto:jengonzalez1423@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your name..." required />
+    <input type="email" name="email" placeholder="Your email..." required />
+    <input type="text" name="subject" placeholder="Subject..." />
+    <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
   <footer>
     <p>© 2025 Jennifer Gonzalez</p>
   </footer>
+  <script src="js/filter.js"></script>
+
 </body>
