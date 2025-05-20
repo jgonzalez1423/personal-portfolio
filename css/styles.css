@@ -332,3 +332,99 @@ html {
   background-color: #7cd995;
 }
 /*contact section ends*/
+
+/*scroll to my projects starts*/
+.scroll-down {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #444;
+  margin: 2rem auto;
+  width: fit-content;
+  animation: bounce 2s infinite;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+/*scroll to my projects ends*/
+
+/* start of education section */
+.education-section {
+  padding: 1.5rem 3rem;
+  background: #f0f7f2; /* soft minty green */
+  text-align: center;
+}
+
+.education-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem; /* Increase spacing */
+  text-align: center;
+  transform: translateX(22px); /* keep this if you're adjusting alignment */
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 2rem;
+  border-left: 3px solid #b3c8b3;
+  max-width: 800px;
+}
+.timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.timeline-date {
+  background-color: #cdeac0; /* light green */
+  color: #222;
+  font-weight: 600;
+  padding: 0.4rem 1.5rem;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  left: -2.6rem; /* move dot closer to the line */
+  top: 0.6rem;    /* slight vertical adjustment */
+  width: 0.8rem;
+  height: 0.8rem;
+  background: #6c9c6c;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.timeline-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* end of education section */
